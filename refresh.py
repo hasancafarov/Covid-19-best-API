@@ -8,7 +8,7 @@ import datetime
 
 from country_codes import country_code
 
-url_confirmed="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+url_confirmed="https://gist.githubusercontent.com/hasancafarov/8a2e1585abdecb342199070bb1203fb4/raw/c3da056d12f4aae7236e0ed828e5925ce3cb1f84/ts.csv"
 url_deaths="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
 url_recovered ="https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv"
 
