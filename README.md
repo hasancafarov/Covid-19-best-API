@@ -6,7 +6,16 @@
 by JHU CCSE](https://github.com/CSSEGISandData/2019-nCoV) removed the support of recovered cases. The /recovered endpoint was removed !
 
 
-All requests must be made to the base url: ``https://covid192.herokuapp.com/``. You can try it out in your browser to further inspect responses.
+> This is a fast (< 200ms) and basic API for tracking development of the new coronavirus (2019-nCoV). It's written in Python using 🍼 Flask and also contains historical data 📈. I've also programmed a skeduler on the app to refresh the data every 10 minutes.
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+![GitHub last commit](https://img.shields.io/github/last-commit/Omaroid/Covid-19-API)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Omaroid/Covid-19-API)
+![GitHub issues](https://img.shields.io/github/issues/Omaroid/Covid-19-API)
+
+## Endpoints
+
+All requests must be made to the base url: ``https://covid19api.herokuapp.com/``. You can try it out in your browser to further inspect responses.
 
 Getting confirmed cases, deaths, and recoveries:
 
@@ -44,6 +53,12 @@ GET /latest
 { "confirmed": 418678, "deaths": 18625 }
 ```
 
+## Data
+
+The data comes from the [2019 Novel Coronavirus (nCoV) Data Repository, provided
+by JHU CCSE](https://github.com/CSSEGISandData/2019-nCoV). It is
+programmatically retrieved, re-formatted and stored in the server for every 10 minutes.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -54,7 +69,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/hasancafarov/Covid-19-best-API`
+* `git clone https://github.com/Omaroid/Covid-19-API.git`
 * `cd Covid-19-Api`
 * `pip install -r requirements.txt`
 
